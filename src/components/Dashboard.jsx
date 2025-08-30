@@ -119,12 +119,12 @@ import DashboardHeader from "./dashboard/DashboardHeader";
 import RevenueChart from "./dashboard/RevenueChart";
 import PropertiesList from "./dashboard/PropertiesList";
 import RecentTransactions from "./dashboard/RecentTransactions";
-import UserManagement from "./user/userManagement";
 import PropertyManagement from "./property/propertyManagement";
 import LoanApplications from "./loan/LoanApplications";
 import axiosInstance from "../assets/axiosConfig";
 import TermsAndConditions from "./dashboard/termsandconditions";
 import PrivacyPolicy from "./dashboard/privacypolicy";
+import UserManagement from "./user/UserManagement";
 
 const AdminDashboard = () => {
   const navigate = useNavigate();

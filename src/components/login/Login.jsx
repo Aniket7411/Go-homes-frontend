@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Hardcoded credentials for demo
     if (email === "admin@gohomes.com" && password === "admin123") {
       login(); // Call the login function from context
@@ -28,12 +28,12 @@ const Login = () => {
         <h1>GoHomes Admin</h1>
         <p>Manage listings, transactions, and more</p>
       </div>
-      
+
       <div className="login-right">
         <div className="login-box">
           <h2>Login to Dashboard</h2>
           {error && <p className="error-message">{error}</p>}
-          
+
           <form onSubmit={handleSubmit}>
             <input
               type="email"
