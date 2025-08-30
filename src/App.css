@@ -1,0 +1,119 @@
+/* General App Styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 20px;
+}
+
+/* Header Navigation */
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Ensures buttons wrap on small screens */
+  width: 100%;
+}
+
+.header button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1; /* Makes buttons flexible */
+  min-width: 120px; /* Ensures they don’t shrink too much */
+}
+
+.header button.active {
+  background: #2c3e50;
+}
+
+.header button:hover {
+  background: #1f2c38;
+}
+
+/* Form Container */
+.auth-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+.auth-container input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+.auth-container button {
+  padding: 12px;
+  font-size: 1rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background: #1a252f;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .header button {
+    font-size: 0.9rem;
+    padding: 12px;
+    flex: 1;
+  }
+
+  .auth-container {
+    width: 95%;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .auth-container input {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .auth-container button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+

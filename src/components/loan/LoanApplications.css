@@ -1,0 +1,55 @@
+.loan-applications {
+    padding: 20px;
+  }
+  
+  .loan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .loan-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .loan-table th,
+  .loan-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .loan-table .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .status.approved {
+    color: green;
+    font-weight: 600;
+  }
+  
+  .status.rejected {
+    color: red;
+    font-weight: 600;
+  }
+  
+  .status.pending {
+    color: orange;
+    font-weight: 600;
+  }
+  
